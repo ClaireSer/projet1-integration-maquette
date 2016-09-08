@@ -1,0 +1,219 @@
+/** {
+    border: 1px solid black;
+}*/
+/** {
+    margin: 0;
+    padding: 0;
+}*/
+
+body {
+    margin: 0;
+}
+
+/*nav*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+#menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;    
+    height: 90px;
+    padding: 0;
+}
+#menu li {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#menu li:hover {
+    border-top: 4px solid #3BAED7;
+    cursor: pointer;
+}
+
+/*header*/
+header {
+    height: 600px;
+}
+header figure {
+    width: 3210px;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+header figure img {
+    display: inline-block;
+}
+#presentation {
+    color: white;    
+    width: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 230px;
+    left: 170px;
+}
+#webagency {
+    color: #3BAED7;
+}
+header p:last-child {
+    background-color: #3BAED7;
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 #1D8DB5;
+}
+
+/*Sections*/
+section, footer {
+    height: 700px; 
+}
+section p, li, #adresse {
+    color: #63686D;
+}
+.intro {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Section : Nos services*/
+#detailsServices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.text {
+    width: 500px;
+}
+#infos {
+    position: relative;
+    top: 75px;
+}
+
+/* Section : Nos projets*/
+#projets {
+    background-color: #F5F5F5;
+}
+#projets .intro ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    width: 350px;
+    padding-left: 0;
+}
+#projets .intro li {
+    background-color: #E5E5E5;    
+    padding: 10px;
+    margin-left: 0;
+}
+#projets .intro li:hover {
+    background-color: #3BAED7;
+    color: white;
+    box-shadow: 0 3px 0 #1D8DB5;
+    cursor: pointer;    
+}
+#projets .intro li:hover > span {
+    width: 1px;
+    height: 1px;
+    border: 8px solid transparent;
+    border-top: 8px solid #1D8DB5;
+    position: relative;
+    top: 38px;
+    right: 30px;
+}
+#projets .intro li:first-child {
+    border-radius: 4px 0 0 4px;        
+}
+#projets .intro li:last-child {
+    border-radius: 0 4px 4px 0;        
+}
+#imagesProjets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+}
+#imagesProjets li {
+    list-style-type: none;
+    width: 250px;
+    padding: 20px;
+}
+#imagesProjets figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+#imagesProjets img {
+    width: 100%;
+}
+#imagesProjets img:hover + figcaption, #imagesProjets figcaption:hover {
+    visibility: visible;
+}
+#imagesProjets figcaption {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 4px;
+    visibility: hidden;
+}
+#imagesProjets strong {
+    font-size: 18px;
+}
+
+/*Footer : formulaire de contact*/
+footer {
+    background-image: url("webagency_images/images/plan.png");
+    background-repeat: round;
+}
+#contenu {
+    background-color: rgba(0, 100, 200, 0.2);
+    height: 700px;
+}
+aside {
+    width: 300px;
+    height: 450px;
+    background-color: rgba(255, 255 ,255, 0.8);
+    padding: 20px;
+    position: relative;
+    left: 850px;
+    top: 50px;
+}
+footer strong {
+    font-size: 26px;
+}
+#adresse span {
+    font-weight: bold;
+}
+#adresse {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input {
+    width: 290px;
+    height: 25px;
+    margin-bottom: 10px; 
+}
+#message {
+    height: 150px;
+}
+#send {
+    background-color: #3BAED7;
+    color: white;
+    width: 100px;
+    border-radius: 3px;
+    /*box-shadow: 0 3px 0 #1D8DB5;   */
+}
