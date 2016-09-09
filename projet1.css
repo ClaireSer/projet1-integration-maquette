@@ -1,13 +1,40 @@
 /** {
     border: 1px solid black;
 }*/
-/** {
-    margin: 0;
-    padding: 0;
+
+@font-face {
+    font-family: 'glyphicons-halflings-regular';
+    src: url('webagency_images/fonts/glyphicons-halflings-regular.eot');
+    src: url('webagency_images/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+         url('webagency_images/fonts/glyphicons-halflings-regular.woff') format('woff'),
+         url('webagency_images/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+         url('webagency_images/fonts/glyphicons-halflings-regular.svg#GlyphiconsHalflingsRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('webagency_images/fonts/font-awesome-4.6.3/fontawesome-webfont.eot?v=4.6.3');
+  src: url('webagency_images/fonts/font-awesome-4.6.3/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), 
+  url('webagency_images/fonts/font-awesome-4.6.3/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), 
+  url('webagency_images/fonts/font-awesome-4.6.3/fontawesome-webfont.woff?v=4.6.3') format('woff'), 
+  url('webagency_images/fonts/font-awesome-4.6.3/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), 
+  url('webagency_images/fonts/font-awesome-4.6.3/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*@font-face {
+    font-family: 'fontawesome-webfont';
+    src: url('webagency_images/fonts/fontawesome-webfont.eot');
+    src: url('webagency_images/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webagency_images/fonts/fontawesome-webfont.woff') format('woff'),
+         url('webagency_images/fonts/fontawesome-webfont.ttf') format('truetype'),
+         url('webagency_images/fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
 }*/
 
 body {
     margin: 0;
+    /*font-family: 'glyphicons-halflings-regular', Arial, Helvetica, sans-serif;*/
+    font-family: 'fontawesome-webfont', Arial, Helvetica, sans-serif;    
 }
 
 /*nav*/
@@ -37,45 +64,90 @@ nav {
 #menu li:hover {
     border-top: 4px solid #3BAED7;
     cursor: pointer;
+    color: black;
 }
 
 /*header*/
-header {
-    height: 600px;
+#slider {
+    width: 100%;
+    overflow: hidden;
 }
-header figure {
-    width: 3210px;
+#slider figure {
+    width: 200%;
     margin: 0;
-    position: absolute;
-    left: 0;
-    z-index: 1;
+    position: relative;
 }
-header figure img {
+#slider figure img {
+    float: left;
+    width: 50%;
+    height: auto;    
+}
+#test {
+    width: 100%;
+}
+.fleche {
+    background-color: black;
+    opacity: 0.4;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
     display: inline-block;
+    position: relative;
+    bottom: 260px;
+    cursor: pointer;
+}
+#flechedroite {
+    float: right;
+    position: relative;
+    right: -20px;
+}
+#flechegauche {
+    position: relative;
+    left: -20px;
+}
+#flechedroite img {
+    position: relative;
+    top: 16px;
+    right: -10px;
+}
+#flechegauche img {
+    position: relative;
+    top: 16px;
+    left: 20px;
 }
 #presentation {
     color: white;    
     width: 500px;
     position: absolute;
-    z-index: 2;
-    top: 230px;
-    left: 170px;
+    top: 220px;
+    left: 180px;
 }
 #webagency {
     color: #3BAED7;
 }
-header p:last-child {
+#presentation p:last-child {
     background-color: #3BAED7;
     text-align: center;
     padding: 10px;
     width: 100px;
     border-radius: 3px;
     box-shadow: 0 3px 0 #1D8DB5;
+    font-size: 16px;
+    cursor: pointer;
 }
-
+#presentation h1 {
+    font-size: 28px;
+}
+#presentation p {
+    font-size: 14px;
+}
+/*.fa {
+    color: blue;
+}*/
 /*Sections*/
 section, footer {
-    height: 700px; 
+    padding-top: 20px;
+    padding-bottom: 20px;    
 }
 section p, li, #adresse {
     color: #63686D;
@@ -93,10 +165,10 @@ section p, li, #adresse {
 }
 .text {
     width: 500px;
+    border: 1px solid black;
 }
 #infos {
     position: relative;
-    top: 75px;
 }
 
 /* Section : Nos projets*/
@@ -179,9 +251,9 @@ footer {
     background-image: url("webagency_images/images/plan.png");
     background-repeat: round;
 }
-#contenu {
+#fondBleu {
     background-color: rgba(0, 100, 200, 0.2);
-    height: 700px;
+    height: 700px;    
 }
 aside {
     width: 300px;
