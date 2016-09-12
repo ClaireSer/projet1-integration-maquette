@@ -13,10 +13,10 @@
     <nav>
         <img id="logo" src="webagency_images/images/logo.png" alt="logo de WebAgency" />
         <ul id="menu">
-            <li>Accueil</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            <li><a href="#slider">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projets">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <!--Page d'accueil-->
@@ -226,7 +226,7 @@
     </section>
 
     <!--Formulaire de contact-->
-    <footer>
+    <footer id="contact">
         <div id="fondBleu">
             <aside>
                 <div>
@@ -238,8 +238,10 @@
                 <input type="text" placeholder="Name" />
                 <input type="text" placeholder="Email" />
                 <input type="text" placeholder="Subject" />
-                <input type="text" placeholder="Message" id="message" /> <br/>
-                <input type="button" value="Send Message" id="send" />
+                <textarea placeholder="Message" id="message"></textarea>
+                <div id="send">
+                    Send message
+                </div>
             </aside>
         </div>
     </footer>
