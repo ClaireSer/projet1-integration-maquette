@@ -11,25 +11,17 @@
          url('webagency_images/fonts/glyphicons-halflings-regular.svg#GlyphiconsHalflingsRegular') format('svg');
 }
 
+
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('webagency_images/fonts/font-awesome-4.6.3/fontawesome-webfont.eot?v=4.6.3');
-  src: url('webagency_images/fonts/font-awesome-4.6.3/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), 
-  url('webagency_images/fonts/font-awesome-4.6.3/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), 
-  url('webagency_images/fonts/font-awesome-4.6.3/fontawesome-webfont.woff?v=4.6.3') format('woff'), 
-  url('webagency_images/fonts/font-awesome-4.6.3/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), 
-  url('webagency_images/fonts/font-awesome-4.6.3/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-/*@font-face {
-    font-family: 'fontawesome-webfont';
+    font-family: 'FontAwesome';
     src: url('webagency_images/fonts/fontawesome-webfont.eot');
     src: url('webagency_images/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
          url('webagency_images/fonts/fontawesome-webfont.woff') format('woff'),
          url('webagency_images/fonts/fontawesome-webfont.ttf') format('truetype'),
-         url('webagency_images/fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
-}*/
+         url('webagency_images/fonts/fontawesome-webfont.svg#fontwesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     margin: 0;
@@ -70,7 +62,8 @@ nav {
 /*header*/
 #slider {
     width: 100%;
-    overflow: hidden;
+    overflow: hidden;    
+    position: relative;
 }
 #slider figure {
     width: 200%;
@@ -82,48 +75,42 @@ nav {
     width: 50%;
     height: auto;    
 }
-#test {
-    width: 100%;
-}
-.fleche {
-    background-color: black;
-    opacity: 0.4;
+.fleche i {
+    background-color: rgba(0, 0, 0, 0.3);
     width: 60px;
     height: 60px;
-    border-radius: 30px;
-    display: inline-block;
-    position: relative;
-    bottom: 260px;
+    border-radius: 60px;
+    line-height: 60px;
     cursor: pointer;
+    color: white;
 }
-#flechedroite {
-    float: right;
+#flechegauche i {
+    padding-right: 15px;
+    text-align: right;
     position: relative;
-    right: -20px;
+    right: 40px;
 }
-#flechegauche {
+#flechedroite i {
+    padding-left: 15px;
+    text-align: left;
     position: relative;
-    left: -20px;
+    left: 40px;
 }
-#flechedroite img {
-    position: relative;
-    top: 16px;
-    right: -10px;
-}
-#flechegauche img {
-    position: relative;
-    top: 16px;
-    left: 20px;
-}
-#presentation {
-    color: white;    
-    width: 500px;
+#conteneur-fleche {
+    width: 100%;
     position: absolute;
-    top: 220px;
-    left: 180px;
+    top: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-#webagency {
-    color: #3BAED7;
+
+#presentation {
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    color: white;    
 }
 #presentation p:last-child {
     background-color: #3BAED7;
@@ -141,9 +128,41 @@ nav {
 #presentation p {
     font-size: 14px;
 }
-/*.fa {
-    color: blue;
-}*/
+#webagency {
+    color: #3BAED7;
+}
+
+/*Décoration*/
+.fa {
+    color: #3BAED7;
+}
+.fa-chevron-left, .fa-chevron-right {
+    color: white;
+}
+.fa-circle {
+    border: 5px solid white;
+}
+hr {
+    width: 130px;
+    opacity: 0.5;
+}
+#services .intro .fa-circle {
+    position: relative;
+    bottom: 21px;
+}
+.icon {
+    width: 100px;
+    height: 60px;
+    border: 1px solid lightgrey;
+    border-radius: 60px;
+    text-align: center;
+    padding-top: 40px;
+}
+#detailsServices .fa-circle {
+    position: relative;
+    right: 17px;
+}
+
 /*Sections*/
 section, footer {
     padding-top: 20px;
@@ -152,23 +171,36 @@ section, footer {
 section p, li, #adresse {
     color: #63686D;
 }
+h2 {
+    font-size: 38px;
+}
 .intro {
     text-align: center;
     padding: 10px;
+    /* revoir ici */
 }
 
 /* Section : Nos services*/
+#services .intro p {
+    width: 50%;
+    margin: auto;
+}
 #detailsServices {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 .text {
-    width: 500px;
-    border: 1px solid black;
+    max-width: 500px;
+    padding-left: 20px;
 }
 #infos {
     position: relative;
+}
+.paragraphe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 /* Section : Nos projets*/
@@ -181,7 +213,7 @@ section p, li, #adresse {
     flex-direction: row;
     justify-content: center;
     margin: auto;
-    width: 350px;
+    width: 370px;
     padding-left: 0;
 }
 #projets .intro li {

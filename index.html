@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>WebAgency</title>
     <link href="projet1.css" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="webagency_images/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +19,6 @@
             <li>Contact</li>
         </ul>
     </nav>
-
     <!--Page d'accueil-->
     <header>
         <div id="slider">
@@ -27,25 +26,25 @@
                 <img id="fille" src="webagency_images/images/slider/bg1.jpg" alt="Fillette qui peint" />
                 <img id="garcon" src="webagency_images/images/slider/bg2.jpg" alt="Garçon avec un haut-parleur" />
             </figure>
-        </div>
-        <div id="test">
-            <div id="flechegauche" class="fleche">
-                <img src="webagency_images/images/fleches/gauche.png" alt="flèche gauche" />
+            <div id="conteneur-fleche">
+                <div id="flechegauche" class="fleche">
+                    <i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i>
+                </div>
+                <div id="flechedroite" class="fleche">
+                    <i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>
+                </div>
             </div>
-            <div id="flechedroite" class="fleche">
-                <img src="webagency_images/images/fleches/droite.png" alt="flèche droite" />                
+            <div id="presentation">
+                <h1>
+                    <span id="webagency">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS
+                </h1>
+                <p>
+                    Vous avez un projet web ? La WebAgency vous aide à le réaliser !
+                </p>
+                <p>
+                    Plus d'infos
+                </p>
             </div>
-        </div>
-        <div id="presentation">
-            <h1>
-                <span id="webagency">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS
-            </h1>
-            <p>
-                Vous avez un projet web ? La WebAgency vous aide à le réaliser !
-            </p>
-            <p>
-                Plus d'infos
-            </p>
         </div>
     </header>
 
@@ -55,18 +54,25 @@
             <h2>
                 NOS SERVICES
             </h2>
-            <img src="" alt="" />
+            <div class="deco">
+                <hr/>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
             <p>
                 Non quae sunt fruantur nostris tum fruantur in quam sunt ad patiuntur multaeque sententiarum suis ab in sic boni ut.
             </p>
         </div>
         <div id="detailsServices">
-            <img src="webagency_images/images/main-feature.png" alt="ordinateur" />
+            <div>
+                <img src="webagency_images/images/main-feature.png" alt="ordinateur" />
+            </div>
             <div id="infos">
-                <div id="ux">
-                    <img src="" alt="" />
+                <div class="paragraphe" id="ux">
+                    <div class="deco">
+                        <i class="fa fa-line-chart fa-2x icon" aria-hidden="true"></i>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    </div>
                     <div class="text">
-                        <i class="fa fa-line-chart" aria-hidden="true"></i>
                         <h3>
                             UX design
                         </h3>
@@ -75,10 +81,12 @@
                         </p>
                     </div>
                 </div>
-                <div id="ui">
-                    <img src="" alt="" />
+                <div class="paragraphe" id="ui">
+                    <div class="deco">
+                        <i class="fa fa-cubes fa-2x icon" aria-hidden="true"></i>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    </div>
                     <div class="text">
-                        <i class="fa fa-pie-chart" aria-hidden="true"></i>
                         <h3>
                             UI design
                         </h3>
@@ -87,8 +95,11 @@
                         </p>
                     </div>
                 </div>
-                <div id="seo">
-                    <img src="" alt="" />
+                <div class="paragraphe" id="seo">
+                    <div class="deco">
+                        <i class="fa fa-pie-chart fa-2x icon" aria-hidden="true"></i>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    </div>
                     <div class="text">
                         <h3>
                             SEO
@@ -123,8 +134,8 @@
                 <figure>
                     <img src="webagency_images/images/portfolio/01.jpg" alt="item1" />
                     <figcaption>
-                        <strong>Portfolio item 1</strong> <br/>
-                        Lorem Ipsum Dolor Sit
+                        <strong>Portfolio item 1</strong> <br/> Lorem Ipsum Dolor Sit
+                        <i class="fa fa-eye" aria-hidden="true"></i>
                     </figcaption>
                 </figure>
             </li>
@@ -132,8 +143,7 @@
                 <figure>
                     <img src="webagency_images/images/portfolio/02.jpg" alt="item2" />
                     <figcaption>
-                        <strong>Portfolio item 1</strong> <br/>
-                        Lorem Ipsum Dolor Sit
+                        <strong>Portfolio item 1</strong> <br/> Lorem Ipsum Dolor Sit
                     </figcaption>
                 </figure>
             </li>
@@ -141,8 +151,7 @@
                 <figure>
                     <img src="webagency_images/images/portfolio/03.jpg" alt="item3" />
                     <figcaption>
-                        <strong>Portfolio item 1</strong> <br/>
-                        Lorem Ipsum Dolor Sit
+                        <strong>Portfolio item 1</strong> <br/> Lorem Ipsum Dolor Sit
                     </figcaption>
                 </figure>
             </li>
@@ -150,8 +159,7 @@
                 <figure>
                     <img src="webagency_images/images/portfolio/04.jpg" alt="item4" />
                     <figcaption>
-                        <strong>Portfolio item 1</strong> <br/>
-                        Lorem Ipsum Dolor Sit
+                        <strong>Portfolio item 1</strong> <br/> Lorem Ipsum Dolor Sit
                     </figcaption>
                 </figure>
             </li>
@@ -159,8 +167,7 @@
                 <figure>
                     <img src="webagency_images/images/portfolio/05.jpg" alt="item5" />
                     <figcaption>
-                        <strong>Portfolio item 1</strong> <br/>
-                        Lorem Ipsum Dolor Sit
+                        <strong>Portfolio item 1</strong> <br/> Lorem Ipsum Dolor Sit
                     </figcaption>
                 </figure>
             </li>
@@ -168,8 +175,7 @@
                 <figure>
                     <img src="webagency_images/images/portfolio/06.jpg" alt="item6" />
                     <figcaption>
-                        <strong>Portfolio item 1</strong> <br/>
-                        Lorem Ipsum Dolor Sit
+                        <strong>Portfolio item 1</strong> <br/> Lorem Ipsum Dolor Sit
                     </figcaption>
                 </figure>
             </li>
@@ -177,8 +183,7 @@
                 <figure>
                     <img src="webagency_images/images/portfolio/07.jpg" alt="item7" />
                     <figcaption>
-                        <strong>Portfolio item 1</strong> <br/>
-                        Lorem Ipsum Dolor Sit
+                        <strong>Portfolio item 1</strong> <br/> Lorem Ipsum Dolor Sit
                     </figcaption>
                 </figure>
             </li>
@@ -186,8 +191,7 @@
                 <figure>
                     <img src="webagency_images/images/portfolio/08.jpg" alt="item8" />
                     <figcaption>
-                        <strong>Portfolio item 1</strong> <br/>
-                        Lorem Ipsum Dolor Sit
+                        <strong>Portfolio item 1</strong> <br/> Lorem Ipsum Dolor Sit
                     </figcaption>
                 </figure>
             </li>
@@ -216,12 +220,19 @@
     <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="
         crossorigin="anonymous"></script>
     <script>
+        var goRight = true;
         $(function () {
             $('#flechedroite').on('click', function () {
-                $('#slider figure').css('left', '-100%');
+                if (goRight){
+                    $('#slider figure').css('left', '-=100%');
+                    goRight = false;
+                }
             });
             $('#flechegauche').on('click', function () {
-                $('#slider figure').css('right', '100%');
+                if (!goRight){
+                    $('#slider figure').css('left', '+=100%');;
+                    goRight = true;
+                }
             });
         });
     </script>
