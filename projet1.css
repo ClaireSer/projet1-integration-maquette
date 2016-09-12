@@ -132,37 +132,6 @@ nav {
     color: #3BAED7;
 }
 
-/*Décoration*/
-.fa {
-    color: #3BAED7;
-}
-.fa-chevron-left, .fa-chevron-right {
-    color: white;
-}
-.fa-circle {
-    border: 5px solid white;
-}
-hr {
-    width: 130px;
-    opacity: 0.5;
-}
-#services .intro .fa-circle {
-    position: relative;
-    bottom: 21px;
-}
-.icon {
-    width: 100px;
-    height: 60px;
-    border: 1px solid lightgrey;
-    border-radius: 60px;
-    text-align: center;
-    padding-top: 40px;
-}
-#detailsServices .fa-circle {
-    position: relative;
-    right: 17px;
-}
-
 /*Sections*/
 section, footer {
     padding-top: 20px;
@@ -177,7 +146,35 @@ h2 {
 .intro {
     text-align: center;
     padding: 10px;
-    /* revoir ici */
+    /* à revoir */
+}
+
+/*Décoration*/
+.fa {
+    color: #3BAED7;
+}
+.fa-chevron-left, .fa-chevron-right {
+    color: white;
+}
+.fa-circle {
+    border: 5px solid white;
+    background-color: white;
+}
+hr {
+    width: 130px;
+    opacity: 0.5;
+}
+#services .intro .fa-circle {
+    position: relative;
+    bottom: 21px;
+}
+.icon {
+    width: 80px;
+    height: 55px;
+    border-radius: 100px;
+    text-align: center;
+    padding-top: 25px;
+    border: 1px solid lightgrey;
 }
 
 /* Section : Nos services*/
@@ -189,18 +186,24 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .text {
-    max-width: 500px;
-    padding-left: 20px;
+    max-width: 600px;
 }
 #infos {
+    margin: 20px;
+}
+#infos .deco {
+    float: left;
+    margin-right: 20px;
     position: relative;
 }
-.paragraphe {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+#detailsServices .fa-circle {
+    position: absolute;
+    top: 35%;
+    right: -11px;
+
 }
 
 /* Section : Nos projets*/
