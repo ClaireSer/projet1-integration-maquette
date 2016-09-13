@@ -1,16 +1,3 @@
-/** {
-    border: 1px solid black;
-}*/
-
-@font-face {
-    font-family: 'glyphicons-halflings-regular';
-    src: url('webagency_images/fonts/glyphicons-halflings-regular.eot');
-    src: url('webagency_images/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-         url('webagency_images/fonts/glyphicons-halflings-regular.woff') format('woff'),
-         url('webagency_images/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
-         url('webagency_images/fonts/glyphicons-halflings-regular.svg#GlyphiconsHalflingsRegular') format('svg');
-}
-
 
 @font-face {
     font-family: 'FontAwesome';
@@ -25,7 +12,6 @@
 
 body {
     margin: 0;
-    /*font-family: 'glyphicons-halflings-regular', Arial, Helvetica, sans-serif;*/
     font-family: 'fontawesome-webfont', Arial, Helvetica, sans-serif;    
 }
 
@@ -48,15 +34,17 @@ nav {
     padding: 0;
 }
 #menu li {
-    padding-top: 34px;
-    padding-bottom: 34px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 34px 10px;
+}
+#menu a {
+    text-decoration: none;
 }
 #menu li:hover {
     border-top: 4px solid #3BAED7;
     cursor: pointer;
-    color: black;
+}
+#menu a:hover {
+    color: black;    
 }
 
 /*header*/
@@ -134,11 +122,10 @@ nav {
 
 /*Sections*/
 section {
-    padding-top: 20px;
-    padding-bottom: 20px;   
+    padding-top: 20px 0;
     min-height: 650px; 
 }
-section p, li, #adresse {
+section p, a, #adresse {
     color: #63686D;
 }
 h2 {
@@ -160,9 +147,6 @@ h2 {
 .fa-circle {
     text-shadow: -5px 0 white, 0 5px white,
       5px 0 white, 0 -5px white;
-      /*background-color: black;*/
-      /*border: 5px solid black;*/
-      /*border-radius: 50px;*/
 }
 hr {
     width: 130px;
@@ -283,6 +267,9 @@ hr {
     bottom: 4px;
     visibility: hidden;
 }
+.legende {
+    font-size: 13px;
+}
 #imagesProjets strong {
     font-size: 18px;
 }
@@ -308,7 +295,8 @@ footer {
     height: 650px;    
 }
 aside {
-    width: 300px;
+    min-width: 200px;
+    width: 22%;
     background-color: rgba(255, 255 ,245, 0.8);
     padding: 20px;
     float: right;
@@ -327,13 +315,15 @@ aside {
     margin-bottom: 10px;
 }
 input {
-    width: 290px;
+    min-width: 190px;
+    width: 95%;
     height: 25px;
     margin-bottom: 10px; 
 }
 #message {
     height: 150px;
-    width: 290px;
+    width: 95%;
+    min-width: 190px;    
     border-color: lightgrey;
 }
 #send {
