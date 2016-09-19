@@ -119,10 +119,9 @@ nav {
     background-color: #3BAED7;
     text-align: center;
     padding: 10px;
-    width: 30%;
+    width: 110px;
     border-radius: 3px;
     box-shadow: 0 3px 0 #1D8DB5;
-    font-size: 16px;
     cursor: pointer;
 }
 
@@ -212,9 +211,9 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 370px;
     margin: 40px auto;
     padding: 0;    
+    width: auto;
 }
 #projets .intro li {
     background-color: #E5E5E5;    
@@ -366,9 +365,6 @@ footer div {
 
 @media screen and (min-width: 600px) and (max-width:910px)
 {
-    #presentation {
-        top: 20%;
-    }
     #presentation h1 {
         font-size: 17px;
     }
@@ -376,17 +372,13 @@ footer div {
         font-size: 11px;
     }
     #presentation p:last-child {
-        font-size: 11px;
         padding: 3px;
-        width: 40%;
+        width: 80px;
     }
     
 }
 @media screen and (max-width: 600px)
 {
-    #ordi {
-        display: none;
-    }
     #conteneur-fleche .fleche i {
         font-size: 10px;           
         width: 30px;
@@ -412,17 +404,14 @@ footer div {
         font-size: 9px;
     }
     #presentation p:last-child {
-        font-size: 9px;
         padding: 3px;
-        width: 40%;
+        width: 60px;
     }
-    #projets .intro ul {
-        width: auto;
+    #ordi {
+        display: none;
     }
     #projets .intro li {
-        background-color: #E5E5E5;    
         padding: 10px 5px;
-        margin-left: 0;
     }
     aside {
         margin: auto;
